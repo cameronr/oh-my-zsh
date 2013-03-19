@@ -24,3 +24,6 @@ alias sl=ls # often screw this up
 
 alias afind='ack-grep -il'
 
+alias vim='vim -p'
+
+alias wf='ssh cam@whaleface.com'
