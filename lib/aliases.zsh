@@ -27,3 +27,4 @@ alias afind='ack-grep -il'
 alias vim='vim -p'
 
 alias wf='ssh cam@whaleface.com'
+alias rpa="workon remotePrinterAdapter"
