@@ -33,7 +33,7 @@ ZSH_THEME="cam"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git virtualenvwrapper)
+plugins=(git cam virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -43,6 +43,10 @@ export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/l
 
 # virtualenvwrapper installation
 # http://virtualenvwrapper.readthedocs.org/en/latest/install.html
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Dev
-source /usr/local/bin/virtualenvwrapper.sh
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+ #  echo "sourcing virtualenv"
+  export WORKON_HOME=$HOME/.virtualenvs
+  export PROJECT_HOME=$HOME/Dev
+  #  source /usr/local/bin/virtualenvwrapper.sh
+fi
+
