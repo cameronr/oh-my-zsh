@@ -28,7 +28,7 @@ then
     # otherwise, leave ls as is, because OpenBSD's ls doesn't support -G
     colorls -G -d . &>/dev/null 2>&1 && alias ls='colorls -G'
   else
-    ls --color -d . &>/dev/null 2>&1 && alias ls='ls --color=tty F' || alias ls='ls -FG'
+    ls --color -d . &>/dev/null 2>&1 && alias ls='ls --color=tty -F' || alias ls='ls -FG'
   fi
 fi
 
