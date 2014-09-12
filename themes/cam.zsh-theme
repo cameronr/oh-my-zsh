@@ -9,8 +9,8 @@ local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 # [time] host:cwd
 
 # primary prompt
-PROMPT='[%T] \
-%m:\
+PROMPT='[$FG[251]%T%{$reset_color%}] \
+$FG[237]%m:\
 $FG[032]%c\
 $(git_prompt_info) \
 $FG[006]%(!.#.»)%{$reset_color%} '
@@ -20,7 +20,7 @@ RPS1='${return_code}'
 
 # color vars
 eval my_gray='$FG[237]'
-eval my_orange='$FG[202]'
+eval my_orange='$FG[208]'
 
 # right prompt
 # if type "virtualenv_prompt_info" > /dev/null
