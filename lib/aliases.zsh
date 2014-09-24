@@ -35,9 +35,6 @@ alias afind='ack-grep -il'
 
 alias vim='vim -p'
 
-alias wf='ssh cam@whaleface.com'
-alias rpa="workon remotePrinterAdapter"
-
 if [ -f ~/.local_aliases ]; then
   source ~/.local_aliases
 fi
