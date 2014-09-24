@@ -30,6 +30,5 @@ alias st='cd ~/Dev/throwaway'
 
 # docker w/ virtualbox
 if [ -x `which boot2docker` ]; then
-  echo "hi"
   export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
 fi
