@@ -26,7 +26,7 @@ function removeFromPath() {
 
 setjdk 1.7
 
-alias wf='ssh cam@whaleface.com'
+alias wf='ssh -A cam@whaleface.com'
 alias sa='cd ~/Dev/sona-android'
 alias st='cd ~/Dev/throwaway'
 alias gpo='git pull origin'
