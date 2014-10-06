@@ -32,6 +32,6 @@ alias st='cd ~/Dev/throwaway'
 alias gpo='git pull origin'
 
 # docker w/ virtualbox
-if [ -x `which boot2docker` ]; then
+if [ -x "`which boot2docker`" ]; then
   export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
 fi
