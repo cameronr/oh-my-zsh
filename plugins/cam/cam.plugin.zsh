@@ -30,6 +30,8 @@ alias wf='ssh -A cam@whaleface.com'
 alias sa='cd ~/Dev/sona-android'
 alias st='cd ~/Dev/throwaway'
 alias gpo='git pull origin'
+alias docker-remove-all-containers="docker ps -aq | xargs docker rm"
+
 
 # docker w/ virtualbox
 if [ -x "`which boot2docker`" ]; then
