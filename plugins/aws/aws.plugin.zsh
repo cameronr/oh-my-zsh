@@ -23,8 +23,4 @@ function aws_profiles {
 
 compctl -K aws_profiles asp
 
-if _homebrew-installed && _awscli-homebrew-installed ; then
-  source $(brew --prefix)/opt/awscli/libexec/bin/aws_zsh_completer.sh
-else
-  source `which aws_zsh_completer.sh`
-fi
+source `which aws_zsh_completer.sh`
