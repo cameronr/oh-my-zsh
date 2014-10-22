@@ -35,5 +35,5 @@ alias docker-remove-all-containers="docker ps -aq | xargs docker rm"
 
 # docker w/ virtualbox
 if [ -x "`which boot2docker`" ]; then
-  export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
+  $(boot2docker shellinit 2>/dev/null)
 fi
