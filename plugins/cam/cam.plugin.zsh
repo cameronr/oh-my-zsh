@@ -3,10 +3,10 @@ export EDITOR=vi
 
 alias sudo='nocorrect sudo '
 export SCALA_HOME=/usr/local/share/scala
-export GRADLE_HOME=/Users/cam/Dev/gradle
-
-
 export PLUGIN_PATHS=$SCALA_HOME/bin:$GRADLE_HOME/bin
+export GRADLE_HOME=/Users/cam/Dev/gradle
+export ANDROID_HOME="/Applications/Android Studio.app/sdk"
+
 
 function setjdk() {
   if [ -x '/usr/libexec/java_home' ]; then 
@@ -31,7 +31,6 @@ alias sa='cd ~/Dev/sona-android'
 alias st='cd ~/Dev/throwaway'
 alias gpo='git pull -r origin'
 alias docker-remove-all-containers="docker ps -aq | xargs docker rm"
-
 
 # docker w/ virtualbox
 if [ -x "`which boot2docker`" ]; then
