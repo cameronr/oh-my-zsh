@@ -23,4 +23,8 @@ function aws_profiles {
 
 compctl -K aws_profiles asp
 
-source `which aws_zsh_completer.sh`
+COMPLETER=`which aws_zsh_completer.sh1`
+
+if [ -x "$COMPLETER" ]; then
+  source `which aws_zsh_completer.sh`
+fi
