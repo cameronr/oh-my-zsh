@@ -7,6 +7,7 @@ export PLUGIN_PATHS=$SCALA_HOME/bin:$GRADLE_HOME/bin
 export GRADLE_HOME=/Users/cam/Dev/gradle
 export ANDROID_HOME="/Applications/Android Studio.app/sdk"
 
+unsetopt share_history
 
 function setjdk() {
   if [ -x '/usr/libexec/java_home' ]; then 
