@@ -5,7 +5,7 @@ alias sudo='nocorrect sudo '
 export SCALA_HOME=/usr/local/share/scala
 export PLUGIN_PATHS=$SCALA_HOME/bin:$GRADLE_HOME/bin
 export GRADLE_HOME=/Users/cam/Dev/gradle
-export ANDROID_HOME="/Applications/Android Studio.app/sdk"
+export ANDROID_HOME="/usr/local/android/sdk"
 
 unsetopt share_history
 
